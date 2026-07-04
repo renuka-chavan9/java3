@@ -1,14 +1,5 @@
-  # Base Image
-FROM nginx
+  FROM tomcat:9.0-jdk17
 
-# Working Directory
-WORKDIR /app
+COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
 
-# Copy JAR file
-COPY target/*.jar app.jar
-
-# Expose Application Port
 EXPOSE 8080
-
-# Run Application
-ENTRYPOINT ["java","-jar","app.jar"]
