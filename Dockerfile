@@ -1,5 +1,5 @@
   # Base Image
-FROM openjdk:17-jdk-slim
+FROM nginx
 
 # Working Directory
 WORKDIR /app
