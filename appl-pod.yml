@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: medical-pod
+  name: app-pod
   labels:
     app: Renuka-app
 spec:
   containers:
-    - name: medical-pod-cont1
-      image: renukachavan/medical
+    - name: app-pod-cont1
+      image: renukachavan/app
 
